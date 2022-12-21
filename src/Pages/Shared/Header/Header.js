@@ -72,7 +72,8 @@ const Header = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
-            <img src={logo} className="" alt="" />
+            <img src={logo} className="mr-1" alt="" />
+            <h3 className="text-3xl">PhotoBuzz</h3>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
