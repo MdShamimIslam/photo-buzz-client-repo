@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import   { Toaster } from 'react-hot-toast';
+import UserContext from './Contexts/UserContext/UserContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+   <Toaster
+  position="top-right"
+  reverseOrder={false}
+/>
+  <UserContext>
+
     <App />
+  </UserContext>
   </React.StrictMode>
 );
 
