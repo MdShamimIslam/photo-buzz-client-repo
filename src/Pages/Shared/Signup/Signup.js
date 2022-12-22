@@ -32,8 +32,6 @@ const handleForm = (e) => {
     handleProfileUpdate(name, photoURL)
     form.reset();
     
-
-    // ...
   })
   .catch((error) => {
     const errorCode = error.code;
