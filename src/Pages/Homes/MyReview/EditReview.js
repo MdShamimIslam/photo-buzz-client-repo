@@ -45,20 +45,20 @@ const EditReview = () => {
 
   }
   return (
-    <div className='w-2/4 mx-auto mt-40'>
+    <div className='w-2/4 mx-auto my-32'>
            <form onSubmit={handleForm} className= " border-2 border-emerald-500 p-3 rounded-xl mt-6 px-18" >
         <div>
-          <h1 className='text-md text-gray-100 '>Rate and review purchased Service</h1>
+          <h1 className='text-md text-black '>Rate and review purchased Service</h1>
         </div>
           <div className="form-control">
           <label className="label">
-            <span className="label-text text-gray-300">Rating(5/5)</span>
+            <span className="label-text text-black">Rating(5/5)</span>
           </label>
           <input type="text" defaultValue={reviews?.rating} name='rating' placeholder="Rating" className="input bg-gray-200 input-bordered rounded-md" />
         </div>
         <div className="form-control">
           <label className="label">
-            <span  className="label-text text-gray-300">Review</span>
+            <span  className="label-text text-black">Review</span>
           </label>
          <textarea defaultValue={reviews?.review} className="textarea textarea-info rounded-md bg-gray-200 "  name='review' placeholder="Please ahare our feedback about this service ?  was the service as describe"></textarea>
         </div>

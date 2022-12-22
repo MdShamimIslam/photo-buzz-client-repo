@@ -11,23 +11,7 @@ const MyReview = () => {
   UseTitle("Review");
   const [reviews, setReviews] = useState([]);
 
-	useEffect(()=> {
-		fetch(`http://localhost:5000/reviews?email=${user?.email}`,
-		 {
-    headers : {
-        authorization : `Bearer ${localStorage.getItem("token-jwt")}`
-    }
-   }).then(res => {
-    if(res.status === 403 || res.status=== 401){
-        return logOut();
-    }
-    return res.json();
-   }).then(data => {
-    console.log(data);
-    return setReviews(data);
-   })
-
- }, [user?.email])
+	
  
 
 	     const handleDelete = (id,serviceId, title) => {
@@ -43,8 +27,8 @@ const MyReview = () => {
 
 
 			 if (data.deletedCount === 1) {
-				const remaining = reviews.filter(review => review._id !== id );
-				setReviews(remaining);
+				// const remaining = reviews.filter(review => review._id !== id );
+				// setReviews(remaining);
        toast.success("Successfully deleted one document.", {autoClose : 400});
     }
      
@@ -58,6 +42,24 @@ const MyReview = () => {
 				}
 
   };
+
+  useEffect(()=> {
+		fetch(`http://localhost:5000/reviews?email=${user?.email}`,
+		 {
+    headers : {
+        authorization : `Bearer ${localStorage.getItem("token-jwt")}`
+    }
+   }).then(res => {
+    if(res.status === 403 || res.status=== 401){
+        return logOut();
+    }
+    return res.json();
+   }).then(data => {
+    console.log(data);
+    return setReviews(data);
+   })
+
+ }, [user?.email, handleDelete])
 
 
 	const handleEdit = (id) => {

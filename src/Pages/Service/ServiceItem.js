@@ -28,9 +28,9 @@ const ServiceItem = ({ service }) => {
               </p>
             </div>
 
-            {/* <p>
-              {description.length > 100 && description.slice(1, 120) + "....."}
-            </p> */}
+            <p>
+              {description?.length > 100 && description.slice(1, 120) + "....."}
+            </p>
             <div className="card-actions justify-between">
               <p className="text-2xl">Package :{price} BDT</p>
 
