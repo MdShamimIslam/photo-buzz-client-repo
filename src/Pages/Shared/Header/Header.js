@@ -11,7 +11,7 @@ const Header = () => {
   const handleSignout = () => {
     signout()
       .then(() => {
-        toast.success("Signout Seccessfully", { autoClose: 200 });
+        toast.success("Signout Successfully", { autoClose: 200 });
         localStorage.removeItem("token-jwt");
       })
       .catch((err) => console.log(err));
