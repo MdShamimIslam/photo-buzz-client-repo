@@ -30,7 +30,7 @@ const Gallary = () => {
   return (
     <div className='bg-gray-800 py-5'>
       		<div className="max-w-2xl mx-auto mb-16 text-center">
-			<h2 className="text-4xl font-bold text-white lg:text-5xl">Gallary</h2>
+			<h2 className="text-4xl font-bold text-white lg:text-5xl">Gallery</h2>
 			 
 		</div>
        <div className="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 mx-auto">
