@@ -10,7 +10,7 @@ const SignUp = () => {
   const {createUser, profileUpdate, googleSignin, loading, setLoading} = useContext(AuthContext);
 	const location = useLocation();
 	const navigate = useNavigate();
-	const from = location?.state?.from.pathname || "/"
+	const from = location.state?.from?.pathname || "/"
  
 const handleForm = (e) => {
  e.preventDefault();
@@ -51,7 +51,6 @@ const handleProfileUpdate = (name , photoURL) => {
     photoURL:  photoURL,
   }
   profileUpdate(profile);
-  // toast.success("Profile Update", {autoClose : 300})
 }
 
 	const handleGoogleSignIn = () =>{
