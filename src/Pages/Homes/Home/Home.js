@@ -6,7 +6,7 @@ import Gallary from '../Gallary/Gallary';
 import Pakage from '../Package/Pakage';
 
 const Home = () => {
-  UseTitle("");
+  UseTitle("Home");
   return (
     <div>
       <Banner></Banner>

@@ -67,7 +67,7 @@ const MyReview = () => {
 
 	}
   return (
-    <div className='pt-24 bg-gray-700'>
+    <div className='pt-24 '>
          {
 					reviews.length === 0 ? <div className='py-[18%] text-white text-4xl text-center'>No Review where Added</div> : 
 					reviews.map(review => <MyReviewCard key={review._id} handleEdit={handleEdit} user={user} handleDelete={handleDelete} myReview={review}></MyReviewCard> )
