@@ -22,7 +22,7 @@ const handleForm = (e) => {
  console.log(email, password, name);
  
  createUser(email, password).then((userCredential) => {
-    // Signed in 
+   
     const user = userCredential.user;
     console.log(user);
     toast.success('Register SuccessFully',{autoClose : 200});
