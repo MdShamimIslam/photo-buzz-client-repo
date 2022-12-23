@@ -17,7 +17,7 @@ const ServiceDetails = () => {
 
   console.log(reviews);
 
-  fetch(`http://localhost:5000/reviews/${_id}`)
+  fetch(`https://photo-buzz-server.vercel.app/reviews/${_id}`)
     .then((res) => res.json())
     .then((data) => setReviews(data));
 
@@ -44,7 +44,7 @@ const ServiceDetails = () => {
     };
     // console.log(reviewObj);
 
-    fetch(`http://localhost:5000/reviews`, {
+    fetch(`https://photo-buzz-server.vercel.app/reviews`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

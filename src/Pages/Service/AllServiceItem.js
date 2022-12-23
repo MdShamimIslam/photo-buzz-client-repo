@@ -15,7 +15,7 @@ const AllServiceItem = ({service}) => {
           <figure><img src={imgage} alt="PhotoGraphy" /></figure>
           <div className="card-body">
             <h2 className="card-title">{title}</h2>
-            <p>{ description.length > 100 && description.slice(1,120) + "....."  }</p>
+            <p>{ description?.length > 100 && description.slice(1,120) + "....."  }</p>
             <div className="card-actions justify-between">
               <p className='text-2xl'>Package :{price} BDT</p>
               <Link to={`/service/${_id}`}>

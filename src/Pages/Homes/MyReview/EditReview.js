@@ -8,7 +8,7 @@ const EditReview = () => {
   const [reviews, setReviews] = useState({});
   const currentDate = new Date().toLocaleString();
   useEffect(() => {
-    fetch(`http://localhost:5000/reviewsEdit/${id}`)
+    fetch(`https://photo-buzz-server.vercel.app/reviewsEdit/${id}`)
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, [id]);
@@ -24,7 +24,7 @@ const EditReview = () => {
       rating,
       date: currentDate,
     };
-    fetch(`http://localhost:5000/reviews/${id}`, {
+    fetch(`https://photo-buzz-server.vercel.app/reviews/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

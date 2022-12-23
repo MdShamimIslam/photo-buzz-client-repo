@@ -1,3 +1,37 @@
+
+#### ........About My PhotoBuzz Project.......
+
+# My project name is 'PhotoBuzz'.
+# Live site Link : ( https://assignment11-auth-8d365.web.app )
+# Github client link : ( https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-MdShamimIslam )
+# Github server link : ( https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-MdShamimIslam )
+# At first I create npm  file by this code npx create-react-app
+# Then I install react-router-dom,Tailwind,DaisyUi,toast,react-photo-view,react-icons etc.
+# Server of side I install  
+# Then I run it
+# Then I create  all components I needed
+# Then I go to Firebase website.Then enable to google,,email-password provider
+# Again I go to Node.js website and I install it and nodemon,mongodb,cors,express,dotenv etc.
+# When projects are finish then git push this element.
+# Finally, deploy my project in a Firebase.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

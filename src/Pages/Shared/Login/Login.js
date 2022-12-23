@@ -34,7 +34,7 @@ const Login = () => {
 
         const currentUser = { email: user.email };
         console.log(currentUser);
-        fetch(`http://localhost:5000/jwt`, {
+        fetch(`https://photo-buzz-server.vercel.app/jwt`, {
           headers: {
             "Content-Type": "application/json",
           },

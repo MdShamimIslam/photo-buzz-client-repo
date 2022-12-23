@@ -2,28 +2,28 @@ import React from 'react';
 
 const Gallary = () => {
     const GallaryPhoto = [
-    {
-        image: "https://raw.githubusercontent.com/rubelrana123/phographer/main/asserts/wedding3.jpg",
+      {
+        image: "https://i.ibb.co/f0Hg8pw/greenhat-photography-savethedate-3.jpg",
  
     },
     {
-        image: "https://raw.githubusercontent.com/rubelrana123/phographer/main/asserts/weeding255520_960_720.jpg",
+        image: "https://img.freepik.com/free-photo/flat-lay-batch-cooking-composition_23-2148765597.jpg",
  
     },
     {
-        image: "https://raw.githubusercontent.com/rubelrana123/phographer/main/asserts/couple.jpg",
+        image: "https://imgv3.fotor.com/images/blog-richtext-image/Birthday-cake-with-candles.jpg",
  
     },
     {
-        image: "https://raw.githubusercontent.com/rubelrana123/phographer/main/asserts/couple.jpg",
+        image: "https://i.ibb.co/SQ5C6B6/1543483387-reinhart-julian-1145947-unsplash.jpg",
  
     },
     {
         image :  "https://raw.githubusercontent.com/rubelrana123/phographer/main/meatloaf-3747129_960_720.jpg",
     },
     {
-        image :  "https://raw.githubusercontent.com/rubelrana123/phographer/main/birthday.jpg",
-    },
+        image :  "https://i.ibb.co/rc7bwcY/images.jpg",
+    }
   
   
 ]

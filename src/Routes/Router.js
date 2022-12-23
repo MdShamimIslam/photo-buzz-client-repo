@@ -11,25 +11,44 @@ import ServiceDetails from "../Pages/Service/ServiceDetails";
 import Login from "../Pages/Shared/Login/Login";
 import SignUp from "../Pages/Shared/Signup/Signup";
 import PrivateRoute from "./PrivateRoute";
- 
- 
- 
- 
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element :<Main></Main>, children :[
-      {path : "/", element : <Home></Home>},
-      {path : "/login", element : <Login></Login>},
-      {path : "/signup", element : <SignUp></SignUp>},
-      {path : "/blog", element : <Blog></Blog>},
-      {path : "/myReviews/:id", element : <EditReview></EditReview>},
-      {path : "/addService", element : <PrivateRoute><AddService></AddService></PrivateRoute>},
-      {path : "/myReview", element : <PrivateRoute><MyReview></MyReview></PrivateRoute>},
-      {path : "/service/:id", element : <ServiceDetails></ServiceDetails>, loader : ({params}) => fetch(`http://localhost:5000/services/${params.id}`)},
-      {path : "/services", element : <AllService></AllService>, loader : () => fetch(`http://localhost:5000/services`)},
-      
-    ]
+    element: <Main></Main>,
+    children: [
+      { path: "/", element: <Home></Home> },
+      { path: "/login", element: <Login></Login> },
+      { path: "/signup", element: <SignUp></SignUp> },
+      { path: "/blog", element: <Blog></Blog> },
+      { path: "/myReviews/:id", element: <EditReview></EditReview> },
+      {
+        path: "/addService",
+        element: (
+          <PrivateRoute>
+            <AddService></AddService>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/myReview",
+        element: (
+          <PrivateRoute>
+            <MyReview></MyReview>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/service/:id",
+        element: <ServiceDetails></ServiceDetails>,
+        loader: ({ params }) =>
+          fetch(`https://photo-buzz-server.vercel.app/services/${params.id}`),
+      },
+      {
+        path: "/services",
+        element: <AllService></AllService>,
+        loader: () => fetch(`https://photo-buzz-server.vercel.app/services`),
+      },
+    ],
   },
 ]);
